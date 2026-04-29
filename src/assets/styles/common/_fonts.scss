@@ -1,0 +1,25 @@
+@use "./../init" as *;
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('../../../assets/fonts/WixMadeforDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('../../../assets/fonts/WixMadeforDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('../../../assets/fonts/WixMadeforDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../../../assets/fonts/DMSans_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

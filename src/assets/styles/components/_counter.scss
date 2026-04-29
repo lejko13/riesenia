@@ -1,0 +1,26 @@
+@use '../init/' as *;
+
+@use '../common/layout';
+.c-counter{
+
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+}
+.c-midlle-coute{
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    align-items: center;
+    border: 1px solid var(--c-greyLIGHT);
+        background-color: white;
+}
+
+.c-antore{
+      display: flex;
+    justify-content: center;
+   
+    align-items: center;
+   
+ 
+}

@@ -1,0 +1,105 @@
+@use "./../init" as *;
+
+:root {
+    // base colors
+    --c-white: #fff;
+    --c-black: #000;
+    --c-border: #e0e2e8;
+    --pink:#dd1969;
+    --pinkHover:#760f38;
+    --green:#149721;
+    --purple:#7D2F78;
+
+    // project colors
+    --c-font: var(--c-black);
+    --c-bg: #f5f5f5;
+
+    --c-grey:#595959;
+    --ruzova:#dd1969;
+    --c-greyLIGHT:#d0d0d0;
+
+    --c-radius:12px;
+    --c-radiusSmall:8px;
+    --c-boxShodow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    --c-paddingPC:3rem;
+
+    --c-paddinMobile:2rem;
+
+    // sizes
+    // --s-container-padding: 2rem;
+
+    // fonts
+    --f-primary:  'Wix Madefor Display', sans-serif;
+    --f-secondary: 'DM Sans', sans-serif;
+
+
+
+      --fw-light: 300;
+      --fw-regular: 400;
+      --fw-medium: 500;
+      --fw-semibold: 600;
+      --fw-bold: 800;
+
+
+        --fs-xs: 12px;
+        --fs-sm:15px;
+        --fs-md: 16px;
+        --fs-lg: 20px;
+        --fs-xg: 30px;
+        --fs-xl: 32px;
+        --fs-xxl: 38px;
+
+           
+
+
+}
+
+body {
+    min-width: 36rem;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    font-family: var(--f-primary);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--c-font);
+    font-synthesis: none;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      
+}
+
+
+
+.l-container {
+    width: 100%;
+    max-width: 160rem;
+    // background-color: pink;
+    margin: 0 auto;
+
+    &.is-shorter {
+        max-width: 132rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // background-color: pink;
+    }
+
+    &.one{
+  padding-left: 0px;
+  padding-right: 0px;
+    }
+}
+
+@media (min-width: 900px) {
+        .l-container {
+                // padding: 0 var(--s-container-padding);;
+
+                &.one{
+  padding-left: 20px;
+  padding-right: 20px;
+    }
+        }
+}

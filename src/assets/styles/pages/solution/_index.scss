@@ -1,0 +1,14 @@
+@use "./../../init" as *;
+
+@use "./solution_banner";
+@use "./solution_content";
+@use "./-solution__categories.scss";
+@use './-solution-content__products.scss';
+
+.l-solution {
+ 
+    // background-color: aquamarine;
+    &__banner {
+        margin-bottom: 10rem;
+    }
+}

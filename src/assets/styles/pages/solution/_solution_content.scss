@@ -1,0 +1,43 @@
+@use "./../../init" as *;
+
+@use "./solution_cta";
+
+
+.c-solution-content {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    gap: 20px;
+
+    &__cta {
+        display: flex;
+        height: 400px;
+     
+    }
+}
+
+
+
+
+@media (min-width: 1100px) {
+    .c-solution-content {
+    flex-direction: row;
+
+       &__cta {
+        
+        display: flex;
+    
+  flex: 1;
+    height: auto;
+        // background-color: rgb(191, 255, 0);
+    }
+
+    
+
+    }
+
+
+}
+
+

@@ -1,0 +1,12 @@
+@use '../init/' as *;
+
+.c-btn-card{
+    background-color: aqua;
+    height: 25px;
+    width: fit-content;
+    color: white;
+    padding-left:10px ;
+    border-radius: 7px;
+    padding-right: 10px;
+    border: none;
+}

@@ -1,0 +1,14 @@
+.c-shopping{
+    width: 100%;
+    padding-top: 10px;
+    // background-color: rgb(255, 18, 18);
+    height: 55px;
+    display: flex;
+}
+.c-btnshop{
+flex: 1;
+display: grid;
+grid-template-columns: 1fr 1.4fr;
+gap: 10px;
+// background-color: rgb(0, 240, 240);
+}

@@ -1,0 +1,144 @@
+@use "./../../init" as *;
+
+@use '../../common/layout';
+.c-solution-banner {
+    position: relative;
+    height: 56.9rem;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        inset: 0;
+        background-color: var(--c-bg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            90deg,
+            rgb(0 0 0 / 60%) 0%,
+            rgb(0 0 0 / 20%) 50%,
+            transparent 100%
+        );
+        // border-radius: 0.8rem;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        // background-color: aqua;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: end;
+        height: 100%;
+        padding: 2rem;
+        
+        // padding: 12.8rem 9.7rem;
+        color: var(--c-white);
+
+        &__title {
+            max-width:  40rem;
+            margin: 0;
+            font-family: var(--f-primary);
+            font-size: var(--fs-xxl);
+           
+            font-weight: var(--fw-bold);
+            line-height: 1.25;
+        }
+
+        &__description {
+            margin: 0;
+            max-width:  40rem;
+            font-family: var(--f-secondary);
+            font-size: var(  --fs-sm);
+            font-weight: 400;
+            line-height: 1.4;
+
+            strong {
+                font-weight: 800;
+            }
+        }
+
+        &__button {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.6rem 2rem;
+            color: #fff;
+            cursor: pointer;
+            background: var(--pink);
+            border: none;
+            border-radius: 0.4rem;
+            transition: background 0.2s ease;
+
+            &:hover {
+              background: var(--pinkHover)
+            }
+
+            &:active {
+                background: #a01249;
+            }
+
+            .sb-text {
+                font-family: var( --f-primary);
+                font-size: var(--fs-sm);
+                font-weight: var(--fw-bold);
+                white-space: nowrap;
+            }
+
+            .sb-icon {
+                flex-shrink: 0;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 600px) {
+    .c-solution-banner {
+        &__content {
+                    
+                justify-content: end;
+                padding: 4rem;
+                gap: 3rem;
+
+                &__description {
+                    max-width:  50rem;
+                    font-size: var( --fs-md);
+                   
+                }
+
+                &__title {
+                    font-size: 4.8rem;
+                        }
+                    }
+               
+    }
+
+}
+
+
+@media (min-width: 900px) {
+    .c-solution-banner {
+            border-radius: 0.8rem;
+
+        
+                  
+                    &__content {
+                        padding: 12.8rem 9.7rem;
+                         justify-content: center;
+
+                    }
+               
+    }
+
+}

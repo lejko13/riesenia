@@ -1,0 +1,90 @@
+@use '../init/' as *;
+
+@use '../common/layout';
+
+.c-wrappercardheadenig{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    color: white;
+  
+}
+.c-rouder{
+    min-height: 20px;
+    min-width: 20px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 22px;
+    padding: 3px;
+       font-weight: 700;
+    font-size: 11px;
+    background-color:var( --ruzova);
+}
+.c-mainWrapper{
+     display: flex;
+    // background-color: azure;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+}
+
+.c-wrapperifno {
+//   background-color: palevioletred;
+color: white;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c-wrapperifno:hover {
+ color: rgb(125, 125, 125);
+}
+
+.c-gridmap{
+    display: grid;
+    // background-color: aqua;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.c-linia{
+    height: 1.5px;
+    width: 10px;
+    background-color: var(--ruzova);
+}
+.c-gridmap2{
+     display: grid;
+    // background-color: rgb(225, 26, 26);
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.c-maincategorytaext{
+
+  
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+@media (min-width: 1100px) {
+
+.c-gridmap2{
+     display: grid;
+    // background-color: rgb(225, 26, 26);
+    grid-template-columns: 1fr  ;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+}

@@ -1,0 +1,28 @@
+@use "./init" as *;
+
+@use "./common";
+@use "./layout";
+
+@use "./pages/assignment";
+@use "./pages/solution";
+
+@use './components/-productCard';
+@use './components/btn-card';
+@use './components//iconbtn';
+@use './components/-c-cartphoto.scss';
+
+@use './components/-Shopping.scss';
+
+@use './components/counter';
+@use './components/shopingbtn';
+@use './components/popup';
+@use './components/-modalbuy';
+@use './components/-categoriewrapper.scss';
+
+@use './components/-underlinetext.scss';
+@use './components/modal';
+@use './components/form';
+@use './components/-input.scss';
+@use './components/select'
+
+
